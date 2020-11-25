@@ -157,11 +157,10 @@ def updateSettings(labelsList, settingsBox, settingsPen, canvasWidthBox, canvasH
     global game
 
     #These cells would need to update the canvas (things like color don't need to, and shouldn't if someone wants to save their game board)
-    if (int(float(canvasWidthBox.get())) > 0 and (not int(float(canvasWidthBox.get())) == canvasWidth)) or (int(float(canvasHeightBox.get())) > 0 and (not int(float(canvasHeightBox.get()))) == canvasHeight) or (int(float(cellSizeBox.get())) > 0 and (not int(float(cellSizeBox.get())) == cellSize)):
+    if (int(float(canvasWidthBox.get())) > 0 and (not int(float(canvasWidthBox.get())) == canvasWidth)) or (int(float(canvasHeightBox.get())) > 0 and (not int(float(canvasHeightBox.get())) == canvasHeight) or (int(float(cellSizeBox.get())) > 0 and (not int(float(cellSizeBox.get())) == cellSize))):
         doUpdateCanvas = True
     else:
         doUpdateCanvas = False
-    print(int(float(canvasWidthBox.get())), canvasWidth, doUpdateCanvas)
 
     #Entry box updates
     if int(float(canvasWidthBox.get())) > 0:
